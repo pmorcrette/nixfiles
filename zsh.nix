@@ -25,6 +25,12 @@
       plugins = [
         { name = "greymd/docker-zsh-completion"; }
         { name = "zsh-users/zsh-syntax-highlighting"; }
+        { name = "none9632/zsh-sudo"; }
+        { name = "anatolykopyl/sshukh"; }
+        { name = "BreakingPitt/zsh-packer"; }
+        { name = "sparsick/ansible-zsh"; }
+        { name = "se-jaeger/zsh-activate-py-environment"; }
+        { name = "larkery/zsh-histdb"; }
       ];
     };
   };
