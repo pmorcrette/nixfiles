@@ -23,14 +23,14 @@
     zplug = {
       enable = true;
       plugins = [
-        { name = "greymd/docker-zsh-completion"; }
-        { name = "zsh-users/zsh-syntax-highlighting"; }
-        { name = "none9632/zsh-sudo"; }
-        { name = "anatolykopyl/sshukh"; }
-        { name = "BreakingPitt/zsh-packer"; }
-        { name = "sparsick/ansible-zsh"; }
-        { name = "se-jaeger/zsh-activate-py-environment"; }
-        { name = "larkery/zsh-histdb"; }
+        { name = "greymd/docker-zsh-completion"; } #Docker autocompletion
+        { name = "zsh-users/zsh-syntax-highlighting"; } # Syntax Highlighting in CLI
+        { name = "none9632/zsh-sudo"; } # To append sude whenever I input ESC-ESC
+        { name = "anatolykopyl/sshukh"; } #Can validate known_host key change
+        { name = "BreakingPitt/zsh-packer"; } #packer autocomplete
+        { name = "sparsick/ansible-zsh"; } # ansible autocomplete
+        { name = "se-jaeger/zsh-activate-py-environment"; } # Activete python venv automatically
+        { name = "larkery/zsh-histdb"; } # history as sqlite db
       ];
     };
   };
