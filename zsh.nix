@@ -16,6 +16,9 @@
     initExtra = ''
      eval $(starship init zsh)
      . "$HOME/.cargo/env"
+     PATH=$PATH:~/.local/bin
+     TERM=xterm
+     source ~/.zfunc/_awsh
                               '';
 
     plugins = with pkgs; [
@@ -30,6 +33,12 @@
         file = "zsh-syntax-highlighting.zsh";
       }
     ];
+    zplug = {
+      enable = true;
+      plugins = [
+        { name = "greymd/docker-zsh-completion"; }
+      ];
+    };
   };
 
   programs.fzf = {
